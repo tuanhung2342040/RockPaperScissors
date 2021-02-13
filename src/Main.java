@@ -6,14 +6,16 @@ public class Main {
     public static void main(String[] args) {
         // create a input
         String computer = "";
+        String player;
+        int computerInt;
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
         System.out.println("Please enter Rock, Paper or Scissors");
         //get player input
-        String player = scan.nextLine();
+        player = scan.nextLine();
         System.out.println("Player chooses: " + player);
         // random computer's play 0, 1, 2
-        int computerInt = random.nextInt(3);
+        computerInt = random.nextInt(3);
         // Convert 0, 1, 2 to Rock, Paper, and Scissors
         if(computerInt == 0)
             computer = "Rock";
